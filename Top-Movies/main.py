@@ -14,13 +14,13 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 import requests
 
-MOVIE_DB_API_KEY = "28fe4b77bf20d67763a3ef5810fa663a"
+MOVIE_DB_API_KEY = "YOUR KEY"
 MOVIE_DB_SEARCH_URL = "https://api.themoviedb.org/3/search/movie"
 MOVIE_DB_INFO_URL = "https://api.themoviedb.org/3/movie"
 MOVIE_DB_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = 'YOUR KEY'
 Bootstrap5(app)
 
 class MyForm(FlaskForm):
